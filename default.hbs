@@ -30,19 +30,9 @@
 
     {{! Styles and Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/vno.css"}}" />
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{asset "css/font-awesome.min.css"}}" />
+    <!--link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" -->
     <link rel="stylesheet" type="text/css" href="{{asset "css/tomorrow.css"}}">
-
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?f87c4b6f38db8abcdb43ba32e7c2bb1d";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-
 
     {{! Ghost Head }}
     {{ghost_head}}
@@ -68,19 +58,13 @@ var _hmt = _hmt || [];
     {{! Ghost Footer }}
     {{ghost_foot}}
 
-    <!-- Compatibility for Ghost 0.7.0: http://dev.ghost.org/no-more-jquery/ -->
-    <script type="text/javascript">  
-      if (typeof jQuery == 'undefined') {
-        document.write('<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></'+'script>');
-      }
-    </script>
+    <script type="text/javascript" src="{{asset "js/jquery.min.js"}}"></script>
     
     {{! The main JavaScript file }}
     <script type="text/javascript" src="{{asset "js/main.js"}}"></script>
 
     {{! Highlight.js }}
     <script type="text/javascript" src="{{asset "js/highlight.pack.js"}}"></script>
-    <script type="text/javascript" src="{{asset "js/baiduPush.js"}}"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
